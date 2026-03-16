@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самолет - Interpool</title>
+    
+    <link href="https://db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=RF+Dewi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/airplane_style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="background-image">
+            <img src="imgs/airback.png" alt="Фон самолета">
+            
+            <div class="case-on-image">
+                <div class="case-title">Самолет</div>
+                <div class="case-description">
+                    Проект «Ваше пространство № 1» уникальное решение в сфере недвижимости с адаптивными сценариями для разных сегментов целевой аудитории
+                </div>
+            </div>
+            
+            <div class="site-link-container">
+                <a href="https://mysamolet.ru" class="site-link" target="_blank">mysamolet.ru</a>
+                <div class="link-underline"></div>
+            </div>
+        </div>
+        
+        <header class="header">
+            <div class="logo">
+                <img src="imgs/logo.png" alt="Логотип">
+            </div>
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        
+        <div class="dark-section">
+            <div class="text-block">
+                <div class="text-column first-column">
+                    <div class="text-title">Задача:</div>
+                    <div class="text-description">
+                        Разработать лендинг, который сформирует знание, что ГК «Самолет» — застройщик №1 в России. Раскрыть УТП, рассказать о готовых проектах и сделать выбор жилья понятным.
+                    </div>
+                </div>
+                
+                <div class="text-column second-column">
+                    <div class="info-item">
+                        <div class="info-title">Клиент</div>
+                        <div class="info-text">ГК Самолет</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-title">Отрасль</div>
+                        <div class="info-text">Строительство и девелопмент</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-title">Год запуска</div>
+                        <div class="info-text">2025</div>
+                    </div>
+                </div>
+                
+                <div class="text-column third-column">
+                    <div class="info-title">Что сделали</div>
+                    <div class="services-list">
+                        <div class="service-item">Аналитика и прототипирование</div>
+                        <div class="service-item">Дорожная карта продукта</div>
+                        <div class="service-item">Микросервисная архитектура</div>
+                        <div class="service-item">Дизайн интерфейса</div>
+                        <div class="service-item">Frontend-разработка</div>
+                        <div class="service-item">Backend-разработка</div>
+                        <div class="service-item">QA</div>
+                        <div class="service-item">Поддержка и развитие проекта</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-project">
+                <div class="about-title">О проекте</div>
+                <div class="about-description">
+                    <p class="about-text">Перед нами стояла задача сформировать среди пользователей знание о том, что ГК Самолет — застройщик №1 в России. Нужно было раскрыть УТП его проектов, рассказать о готовых домах, обозначить подходы компании к строительству, а также показать, что покупка жилья у девелопера может быть понятной и легкой, когда ключевые параметры выбора подсвечены заранее.</p>
+                    <p class="about-text">Когда стоит задача такая важная задача, простого рассказа о преимуществах недостаточно. Нужно показать философию компании через эмоции, реальные истории и участие в выборе — так, будто он уже примеряет на себе жизнь в будущем доме. Для этого покупатель должен пройти по пути выбора квартиры: оценить локацию, атмосферу и комфорт будущего жилья, условия сделки и другие параметры.</p>
+                </div>
+            </div>
+            
+            <div class="video-image">
+                <img src="imgs/video.png" alt="Видео">
+            </div>
+            
+            <div class="idea-block">
+                <div class="idea-title">От идеи до реализации</div>
+                
+                <div class="idea-description">
+                    Метафорой проекта стал лифт — привычный способ перемещения, который в спецпроекте превращался в маршрут к своему «пространству»: набору параметров идеального дома. Поднимаясь этаж за этажом по виртуальному жилому комплексу — собирательному образу проектов ГК Самолет, — пользователь отвечал на вопросы теста и уточнял приоритеты: от бюджета и локации до сценариев досуга и желаемой атмосферы. В финале система рекомендовала 3 ЖК, которые лучше всего совпадают с этим профилем.
+                </div>
+                
+                <div class="idea-subtitle">
+                    Всего пользователю предстояло пройти четыре «этажа» сценария:
+                </div>
+                
+                <div class="floors-container">
+                    <div class="floor-item">
+                        <div class="floor-title">1 этаж — Приоритеты</div>
+                        <div class="floor-description">Что важнее: цена, локация, инфраструктура, планировка, репутация, вид из окон?</div>
+                    </div>
+                    <div class="floor-item">
+                        <div class="floor-title">2 этаж — Досуг</div>
+                        <div class="floor-description">Как проводите время: парки, спорт, сериалы и т.д.</div>
+                    </div>
+                    <div class="floor-item">
+                        <div class="floor-title">3 этаж — Опции</div>
+                        <div class="floor-description">Знакомство с услугами и возможностями от застройщика.</div>
+                    </div>
+                    <div class="floor-item">
+                        <div class="floor-title">4 этаж — Атмосфера</div>
+                        <div class="floor-description">Какой настрой у будущего дома: благоустройство, окружение, сервисы.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blue-section">
+                <div class="marquee-row marquee-row-top">
+                    <div class="marquee-track marquee-track-right">
+                        <img src="imgs/1.1.png" alt="Image 1.1" class="marquee-image">
+                        <img src="imgs/1.2.png" alt="Image 1.2" class="marquee-image">
+                        <img src="imgs/1.3.png" alt="Image 1.3" class="marquee-image">
+                        <img src="imgs/1.1.png" alt="Image 1.1" class="marquee-image">
+                        <img src="imgs/1.2.png" alt="Image 1.2" class="marquee-image">
+                        <img src="imgs/1.3.png" alt="Image 1.3" class="marquee-image">
+                    </div>
+                </div>
+                
+                <div class="marquee-row marquee-row-middle">
+                    <div class="marquee-track marquee-track-left">
+                        <img src="imgs/2.1.png" alt="Image 2.1" class="marquee-image">
+                        <img src="imgs/2.2.png" alt="Image 2.2" class="marquee-image">
+                        <img src="imgs/2.3.png" alt="Image 2.3" class="marquee-image">
+                        <img src="imgs/2.1.png" alt="Image 2.1" class="marquee-image">
+                        <img src="imgs/2.2.png" alt="Image 2.2" class="marquee-image">
+                        <img src="imgs/2.3.png" alt="Image 2.3" class="marquee-image">
+                    </div>
+                </div>
+                
+                <div class="marquee-row marquee-row-bottom">
+                    <div class="marquee-track marquee-track-right">
+                        <img src="imgs/3.1.png" alt="Image 3.1" class="marquee-image">
+                        <img src="imgs/3.2.png" alt="Image 3.2" class="marquee-image">
+                        <img src="imgs/3.3.png" alt="Image 3.3" class="marquee-image">
+                        <img src="imgs/3.1.png" alt="Image 3.1" class="marquee-image">
+                        <img src="imgs/3.2.png" alt="Image 3.2" class="marquee-image">
+                        <img src="imgs/3.3.png" alt="Image 3.3" class="marquee-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mechanics-block">
+                <div class="mechanics-title">Разработка и механика</div>
+                <div class="mechanics-description">
+                    <p class="mechanics-text">Цель спецпроекта — не «продать в лоб», а вовлечь человека в выбор и перевести знание о бренде в конкретное действие: перейти к подбору квартиры и оставить заявку.</p>
+                    <p class="mechanics-text">Пользовательский путь выглядел максимально прозрачным: баннер → посадочная страница → интерактивный маршрут на четыре «этажа» → персональная рекомендация. При этом за простым для пользователя сценарием стояла сложная логика профилирования и персонализации: сегментация аудитории, разные входные сообщения, регулярное обновление креативов и динамический подбор ЖК. Четкая навигация по шагам улучшала UX и увеличивала глубину взаимодействия.</p>
+                </div>
+            </div>
+            
+            <div class="blue-section-2">
+                <div class="white-overlay">
+                    <div class="snake-container">
+                        <div class="snake-row">
+                            <div class="snake-item hollow block-1">
+                                <div class="snake-text">описание проекта</div>
+                            </div>
+                            <div class="snake-item blue block-2">
+                                <div class="snake-text">Этаж выбора</div>
+                            </div>
+                            <div class="snake-item hollow block-3">
+                                <div class="snake-text">параметры для выбора</div>
+                            </div>
+                            <div class="snake-item hollow block-4">
+                                <div class="snake-text">выбор по характеристикам параметра</div>
+                            </div>
+                        </div>
+                        
+                        <div class="snake-row indent">
+                            <div class="snake-item blue block-5">
+                                <div class="snake-text">Этаж свободного времени</div>
+                            </div>
+                            <div class="snake-item hollow block-6">
+                                <div class="snake-text">параметры для выбора</div>
+                            </div>
+                            <div class="snake-item hollow block-7">
+                                <div class="snake-text">выбор по характеристикам параметра</div>
+                            </div>
+                        </div>
+                        
+                        <div class="snake-row indent">
+                            <div class="snake-item blue block-8">
+                                <div class="snake-text">Этаж возможностей</div>
+                            </div>
+                            <div class="snake-item hollow block-9">
+                                <div class="snake-text">параметры для выбора</div>
+                            </div>
+                            <div class="snake-item hollow block-10">
+                                <div class="snake-text">выбор по характеристикам параметра</div>
+                            </div>
+                        </div>
+                        
+                        <div class="snake-row indent">
+                            <div class="snake-item blue block-11">
+                                <div class="snake-text">Этаж эмоций</div>
+                            </div>
+                            <div class="snake-item hollow block-12">
+                                <div class="snake-text">параметры для выбора</div>
+                            </div>
+                            <div class="snake-item hollow block-13">
+                                <div class="snake-text">выбор по характеристикам параметра</div>
+                            </div>
+                        </div>
+                        
+                        <div class="snake-row center">
+                            <div class="snake-item hollow block-14">
+                                <div class="snake-text">Вычисление результата</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="white-photos">
+                        <img src="imgs/white1.png" alt="White 1" class="white-photo photo-1">
+                        <img src="imgs/white2.png" alt="White 2" class="white-photo photo-2">
+                        <img src="imgs/white3.png" alt="White 3" class="white-photo photo-3">
+                        <img src="imgs/white4.png" alt="White 4" class="white-photo photo-4">
+                        <img src="imgs/white_photo.png" alt="White Photo" class="white-photo photo-5">
+                    </div>
+                    
+                    <div class="text-elements">
+                        <div class="cjm-title">CJM <br>проекта</div>
+                        <div class="advantages-list">
+                            <div class="advantage-item">Преимущества Самолета</div>
+                            <div class="advantage-item">Видеоотзывы</div>
+                        </div>
+                    </div>
+                    
+                    <div class="banner-rectangle">
+                        <div class="banner-text">рекламный<br>баннер</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="audience-block">
+                <div class="audience-title">Аудиторию разделили на три сегмента:</div>
+                
+                <ul class="audience-list">
+                    <li class="audience-item">А — семьи с двумя и более детьми</li>
+                    <li class="audience-item">B — молодые семьи</li>
+                    <li class="audience-item">C — те, кто живёт один</li>
+                </ul>
+                
+                <p class="audience-description">
+                    Под каждый сегмент подготовили отдельные линейки сообщений и баннеров с разными акцентами на ключевые преимущества. Например, люди без пары и детей видели предложение подобрать квартиру под собственный стиль жизни, а семьи — сценарии покупки в ипотеку и инфраструктуру для детей. Креативы также адаптировали под площадки и форматы: всего команда Interpool разработала 7 концепций и подготовила 182 ресайза для размещений. В производстве использовали ИИ, моушн-дизайн и динамические шаблоны креативов.
+                </p>
+            </div>
+            
+            <div class="white-zone">
+                <div class="white-zone-container">
+                    <div class="white-zone-row">
+                        <img src="imgs/4.1.png" alt="Photo 4.1" class="white-zone-image image-1">
+                        <img src="imgs/4.2.png" alt="Photo 4.2" class="white-zone-image image-2">
+                    </div>
+                    
+                    <div class="white-zone-row">
+                        <img src="imgs/5.1.png" alt="Photo 5.1" class="white-zone-image image-3">
+                        <img src="imgs/5.2.png" alt="Photo 5.2" class="white-zone-image image-4">
+                    </div>
+                    
+                    <div class="white-zone-row">
+                        <img src="imgs/6.1.png" alt="Photo 6.1" class="white-zone-image image-5">
+                        <img src="imgs/6.2.png" alt="Photo 6.2" class="white-zone-image image-6">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="next-case-section">
+                <div class="site-link-bottom">
+                    <a href="https://mysamolet.ru" class="bottom-site-link" target="_blank">mysamolet.ru</a>
+                    <div class="bottom-link-underline"></div>
+                </div>
+                
+                <a href="case_index.html" class="next-case-link">
+                    Следующий кейс >
+                </a>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <div class="team-title">Над проектом работали</div>
+            
+            <div class="team-container" id="teamContainer">
+                <div class="team-wrapper">
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="team-item-link">
+                        <div class="team-item">
+                            <div class="team-image">
+                                <img src="imgs/checker.png" alt="Фамилия Имя" class="team-img">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-name">Фамилия Имя</div>
+                                <div class="team-role">Занимаемая должность</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="similar-cases-section">
+            <div class="similar-cases-title">Похожие кейсы</div>
+            
+            <div class="similar-cases-container" id="similarCasesContainer">
+                <div class="similar-cases-wrapper">
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="similar-case-item-link">
+                        <div class="similar-case-item">
+                            <div class="similar-case-image">
+                                <img src="imgs/checker.png" alt="Название проекта" class="similar-case-img">
+                            </div>
+                            <div class="similar-case-content">
+                                <div class="similar-case-name">Название проекта</div>
+                                <div class="similar-case-description">Описание проекта Описание проекта Описание проекта Описание проекта</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imgs/logo_big.png" alt="Interpool">
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-nav">
+                        <a href="main_index.html" class="footer-nav-link">Главная</a>
+                        <a href="about_index.html" class="footer-nav-link">О нас</a>
+                        <a href="case_index.html" class="footer-nav-link">Проекты</a>
+                        <a href="index.html" class="footer-nav-link">Меню</a>
+                    </div>
+                    
+                    <div class="footer-policy">
+                        Политика конфиденциальности
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/airplane_script.js"></script>
+</body>
+</html>

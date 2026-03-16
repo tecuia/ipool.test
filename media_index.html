@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа - Interpool</title>
+    
+    <link href="https://db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap" rel="stylesheet">
+    
+    <link href="https://db.onlinewebfonts.com/c/6b6e6c7b7b7b7b7b7b7b7b7b7b7b7b7b?family=TT+Commons+Regular" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/media_style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="logo">
+                <img src="imgs/logo.png" alt="Логотип">
+            </div>
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        
+        <div class="media-image-container">
+            <img src="imgs/media.png" alt="Media" class="media-image">
+        </div>
+        
+        <div class="dark-section">
+            
+            <div class="filter-menu">
+                <div class="filter-item active" data-filter="all" style="width: 96px; height: 52px;">
+                    <span class="filter-text">Все</span>
+                    <span class="filter-count">12</span>
+                </div>
+                
+                <div class="filter-item" data-filter="event" style="width: 276px; height: 52px;">
+                    <span class="filter-text">Мероприятия</span>
+                    <span class="filter-count">4</span>
+                </div>
+                
+                <div class="filter-item" data-filter="research" style="width: 286px; height: 52px;">
+                    <span class="filter-text">Исследования</span>
+                    <span class="filter-count">4</span>
+                </div>
+                
+                <div class="filter-item" data-filter="mechanic" style="width: 208px; height: 52px;">
+                    <span class="filter-text">Механики</span>
+                    <span class="filter-count">4</span>
+                </div>
+            </div>
+            
+            <div class="cases-grid">
+                
+                <div class="case-card card-type-large" data-category="event">
+                    <div class="case-image image-large">
+                        <img src="imgs/checker.png" alt="Медиа 1" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-large" data-category="research">
+                    <div class="case-image image-large">
+                        <img src="imgs/checker.png" alt="Медиа 2" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-small" data-category="mechanic">
+                    <div class="case-image image-small">
+                        <img src="imgs/checker.png" alt="Медиа 3" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-small" data-category="event">
+                    <div class="case-image image-small">
+                        <img src="imgs/checker.png" alt="Медиа 4" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-small" data-category="research">
+                    <div class="case-image image-small">
+                        <img src="imgs/checker.png" alt="Медиа 5" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-large" data-category="mechanic">
+                    <div class="case-image image-large">
+                        <img src="imgs/checker.png" alt="Медиа 6" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-large" data-category="event">
+                    <div class="case-image image-large">
+                        <img src="imgs/checker.png" alt="Медиа 7" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-medium" data-category="research">
+                    <div class="case-image image-small">
+                        <img src="imgs/checker.png" alt="Медиа 8" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-small" data-category="mechanic">
+                    <div class="case-image image-small">
+                        <img src="imgs/checker.png" alt="Медиа 9" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-small" data-category="event">
+                    <div class="case-image image-small">
+                        <img src="imgs/checker.png" alt="Медиа 10" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-large" data-category="research">
+                    <div class="case-image image-large">
+                        <img src="imgs/checker.png" alt="Медиа 11" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+                <div class="case-card card-type-small" data-category="mechanic">
+                    <div class="case-image image-small">
+                        <img src="imgs/checker.png" alt="Медиа 12" class="case-img">
+                    </div>
+                    <div class="case-label">Самолет</div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imgs/logo_big.png" alt="Interpool">
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-nav">
+                        <a href="main_index.html" class="footer-nav-link">Главная</a>
+                        <a href="about_index.html" class="footer-nav-link">О нас</a>
+                        <a href="case_index.html" class="footer-nav-link">Проекты</a>
+                        <a href="index.html" class="footer-nav-link">Меню</a>
+                    </div>
+                    
+                    <div class="footer-policy">
+                        Политика конфиденциальности
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js\media_script.js"></script>
+</body>
+</html>
