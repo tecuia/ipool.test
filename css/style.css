@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+    min-height: 100vh;
+    font-family: "Redcollar", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-container {
+    width: 1440px;
+    height: 1080px;
+    background-color: #282828;
+    position: relative;
+    margin-top: 60px;
+}
+
+.logo {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 205px;
+    height: 48px;
+    z-index: 10;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 10;
+    color: #FFFFFFCC;
+    font-size: 24px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.close:hover {
+    color: #E3032E;
+    transform: scale(1.1);
+}
+
+.close:active {
+    transform: scale(0.95);
+}
+
+.menu-images {
+    position: absolute;
+    left: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 964px;
+    height: 964px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.menu-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.menu-image[data-menu="1"] {
+    width: 630px;
+    height: 551px;
+    transform: translate(-60%, -50%);
+}
+
+.menu-image[data-menu="2"] {
+    width: 752px;
+    height: 752px;
+    transform: translate(-55%, -50%);
+}
+
+.menu-image[data-menu="3"] {
+    width: 964px;
+    height: 964px;
+    transform: translate(-50%, -50%);
+}
+
+.menu-image[data-menu="4"] {
+    width: 732px;
+    height: 732px;
+    transform: translate(-53%, -50%);
+}
+
+.menu {
+    position: absolute;
+    width: 351px;
+    left: 838px;
+    top: calc(50% - 384px/2);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    perspective: 800px;
+}
+
+.menu-item {
+    font-family: "Redcollar", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90%;
+    letter-spacing: 0%;
+    color: #FFFFFFCC;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    will-change: transform, color;
+    z-index: 25;
+    transform-style: preserve-3d;
+}
+
+.menu-item span {
+    display: inline-block;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    white-space: pre;
+}
+
+.menu-item span.space {
+    width: 20px;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px 40px 40px;
+    pointer-events: none;
+    gap: 410px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 104px;
+    width: 396px;
+    height: 80px;
+    font-family: "Redcollar", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #FFFFFFCC;
+    pointer-events: auto;
+}
+
+.contacts-left {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    white-space: nowrap;
+}
+
+.contacts-right {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    white-space: nowrap;
+}
+
+.contacts-left a {
+    color: #FFFFFFCC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.contacts-left a:hover {
+    color: #E3032E;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 197px;
+    height: 24px;
+    pointer-events: auto;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
